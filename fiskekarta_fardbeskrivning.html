@@ -1,0 +1,1802 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_da77f6050ced1a91ba93fea19d10b77c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_da77f6050ced1a91ba93fea19d10b77c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_da77f6050ced1a91ba93fea19d10b77c = L.map(
+                "map_da77f6050ced1a91ba93fea19d10b77c",
+                {
+                    center: [63.0, 15.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9ca54c5e8cabf8767fcdf6f79eb0132a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9ca54c5e8cabf8767fcdf6f79eb0132a.addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var marker_c1a6c49288e6f770e0466847197a4c22 = L.marker(
+                [60.60333151425979, 15.01329462682175],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_165c88d7c9435febe15b87e1d1e24eed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_427e0d4cafbf9c0ee288bae596d974e3 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bd7236a3461becc6f19c08f63ca029d3 = $(`<div id="html_bd7236a3461becc6f19c08f63ca029d3" style="width: 100.0%; height: 100.0%;">         <b>Gråda kraftverk utloppet (Flogen)</b><br>         Fiskarter: Harr, Öring, Sik, Gädda, Aborre, Mört, Braxen, Lake<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.60333151425979,15.01329462682175' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_427e0d4cafbf9c0ee288bae596d974e3.setContent(html_bd7236a3461becc6f19c08f63ca029d3);
+            
+        
+
+        marker_c1a6c49288e6f770e0466847197a4c22.bindPopup(popup_427e0d4cafbf9c0ee288bae596d974e3)
+        ;
+
+        
+    
+    
+                marker_c1a6c49288e6f770e0466847197a4c22.setIcon(icon_165c88d7c9435febe15b87e1d1e24eed);
+            
+    
+            var marker_4a336c432288ab04b19dceba2ef2b487 = L.marker(
+                [60.486660726549744, 14.92248405737569],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_63ef0fe5f1b02f5a6c3cdd2397e272e6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8de2298340f554ba1e436b0fd8f05e45 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99ef5a9fbbd1f6c4cdd1db2021b6a816 = $(`<div id="html_99ef5a9fbbd1f6c4cdd1db2021b6a816" style="width: 100.0%; height: 100.0%;">         <b>Lillstups kraftverk utloppet</b><br>         Fiskarter: Harr, Öring, Sik, Gädda, Aborre, Mört, Braxen, Lake<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.486660726549744,14.92248405737569' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_8de2298340f554ba1e436b0fd8f05e45.setContent(html_99ef5a9fbbd1f6c4cdd1db2021b6a816);
+            
+        
+
+        marker_4a336c432288ab04b19dceba2ef2b487.bindPopup(popup_8de2298340f554ba1e436b0fd8f05e45)
+        ;
+
+        
+    
+    
+                marker_4a336c432288ab04b19dceba2ef2b487.setIcon(icon_63ef0fe5f1b02f5a6c3cdd2397e272e6);
+            
+    
+            var marker_6c76cfe95fbaf4fabbe3240de85d0458 = L.marker(
+                [60.518189036451815, 15.003078150282093],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_7eb84ec129bb5af281e08267968c818a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_646f5e77528ad580c3b41673fb64aea4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18c1cb2c1a0299e224136891c5e205a3 = $(`<div id="html_18c1cb2c1a0299e224136891c5e205a3" style="width: 100.0%; height: 100.0%;">         <b>Lögnäsforsen</b><br>         Fiskarter: Harr, Öring, Sik, Gädda, Aborre, Mört, Braxen, Lake<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.518189036451815,15.003078150282093' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_646f5e77528ad580c3b41673fb64aea4.setContent(html_18c1cb2c1a0299e224136891c5e205a3);
+            
+        
+
+        marker_6c76cfe95fbaf4fabbe3240de85d0458.bindPopup(popup_646f5e77528ad580c3b41673fb64aea4)
+        ;
+
+        
+    
+    
+                marker_6c76cfe95fbaf4fabbe3240de85d0458.setIcon(icon_7eb84ec129bb5af281e08267968c818a);
+            
+    
+            var marker_0e306a847195fd62b19e1f5c540f38dc = L.marker(
+                [60.534868745104056, 15.088619810062225],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_61e222934751435c1ef266eb6ec8d80b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bca8d2350677d74c719cb07ba1ea4833 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_127d7b04159e882ce1ae462c83913b86 = $(`<div id="html_127d7b04159e882ce1ae462c83913b86" style="width: 100.0%; height: 100.0%;">         <b>Djurforsen</b><br>         Fiskarter: Harr, Öring, Sik, Gädda, Aborre, Mört, Braxen, Lake<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.534868745104056,15.088619810062225' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_bca8d2350677d74c719cb07ba1ea4833.setContent(html_127d7b04159e882ce1ae462c83913b86);
+            
+        
+
+        marker_0e306a847195fd62b19e1f5c540f38dc.bindPopup(popup_bca8d2350677d74c719cb07ba1ea4833)
+        ;
+
+        
+    
+    
+                marker_0e306a847195fd62b19e1f5c540f38dc.setIcon(icon_61e222934751435c1ef266eb6ec8d80b);
+            
+    
+            var marker_fda4eebe8a1099784eede5d4d4ace981 = L.marker(
+                [60.45481811795963, 15.000181784128438],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_d442a07e8a8e3fac86e73e5fe3fee897 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69f01443484bc829485dc6da7bcd50ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b4c70d18e57c80b15d8861aaa387d94a = $(`<div id="html_b4c70d18e57c80b15d8861aaa387d94a" style="width: 100.0%; height: 100.0%;">         <b>Tansån (fiskeförbud)</b><br>         Fiskarter: Öring<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.45481811795963,15.000181784128438' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_69f01443484bc829485dc6da7bcd50ca.setContent(html_b4c70d18e57c80b15d8861aaa387d94a);
+            
+        
+
+        marker_fda4eebe8a1099784eede5d4d4ace981.bindPopup(popup_69f01443484bc829485dc6da7bcd50ca)
+        ;
+
+        
+    
+    
+                marker_fda4eebe8a1099784eede5d4d4ace981.setIcon(icon_d442a07e8a8e3fac86e73e5fe3fee897);
+            
+    
+            var marker_38a30c3c07d36c7397333d8912ed855f = L.marker(
+                [60.50133230275064, 14.896780741009206],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_393fe5b7bce7336d590a54abd134b6f2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_82187b18e794228e129e80655b5197d1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_584e89fad42614bfd73751b9e1e2be45 = $(`<div id="html_584e89fad42614bfd73751b9e1e2be45" style="width: 100.0%; height: 100.0%;">         <b>Långsjön</b><br>         Fiskarter: Öring, Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.50133230275064,14.896780741009206' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_82187b18e794228e129e80655b5197d1.setContent(html_584e89fad42614bfd73751b9e1e2be45);
+            
+        
+
+        marker_38a30c3c07d36c7397333d8912ed855f.bindPopup(popup_82187b18e794228e129e80655b5197d1)
+        ;
+
+        
+    
+    
+                marker_38a30c3c07d36c7397333d8912ed855f.setIcon(icon_393fe5b7bce7336d590a54abd134b6f2);
+            
+    
+            var marker_3c0d972db65bc28d7b38e36f967b813e = L.marker(
+                [60.61961538057019, 15.150352581868221],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_e784495e866924e5528ee8fc0e390537 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4dffe91e63a288b1b6ac742451cff67a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3d4d732a639029ecead64bee56f80e5e = $(`<div id="html_3d4d732a639029ecead64bee56f80e5e" style="width: 100.0%; height: 100.0%;">         <b>St Suren</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.61961538057019,15.150352581868221' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_4dffe91e63a288b1b6ac742451cff67a.setContent(html_3d4d732a639029ecead64bee56f80e5e);
+            
+        
+
+        marker_3c0d972db65bc28d7b38e36f967b813e.bindPopup(popup_4dffe91e63a288b1b6ac742451cff67a)
+        ;
+
+        
+    
+    
+                marker_3c0d972db65bc28d7b38e36f967b813e.setIcon(icon_e784495e866924e5528ee8fc0e390537);
+            
+    
+            var marker_1869288a7d715f3620236924e16610cc = L.marker(
+                [60.604459958139316, 15.090234969216388],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_946e05426cfb44e111bc91c12992666a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a9aa41b1606c4ee4b16c0d0e653765ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d1b533e90bcf790f773c58f8b708b76b = $(`<div id="html_d1b533e90bcf790f773c58f8b708b76b" style="width: 100.0%; height: 100.0%;">         <b>Mojesjön</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.604459958139316,15.090234969216388' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_a9aa41b1606c4ee4b16c0d0e653765ca.setContent(html_d1b533e90bcf790f773c58f8b708b76b);
+            
+        
+
+        marker_1869288a7d715f3620236924e16610cc.bindPopup(popup_a9aa41b1606c4ee4b16c0d0e653765ca)
+        ;
+
+        
+    
+    
+                marker_1869288a7d715f3620236924e16610cc.setIcon(icon_946e05426cfb44e111bc91c12992666a);
+            
+    
+            var marker_a90608e440667b7ba2be95bce11cef19 = L.marker(
+                [60.57147562358032, 15.086366534782726],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_887a1b03233357490bc2e62417df99ff = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe055bc1781608f69abeb1db2ba0c924 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_0edca5eada34d09caa4ea5b2744f0d7d = $(`<div id="html_0edca5eada34d09caa4ea5b2744f0d7d" style="width: 100.0%; height: 100.0%;">         <b>Essttjärn (Edstjärn)</b><br>         Fiskarter: Harr, Gädda, Aborre, Mört, Braxen, Id<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.57147562358032,15.086366534782726' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_fe055bc1781608f69abeb1db2ba0c924.setContent(html_0edca5eada34d09caa4ea5b2744f0d7d);
+            
+        
+
+        marker_a90608e440667b7ba2be95bce11cef19.bindPopup(popup_fe055bc1781608f69abeb1db2ba0c924)
+        ;
+
+        
+    
+    
+                marker_a90608e440667b7ba2be95bce11cef19.setIcon(icon_887a1b03233357490bc2e62417df99ff);
+            
+    
+            var marker_1451ac1c49145837b40ae8896dc88292 = L.marker(
+                [60.57144328631201, 15.094357264184577],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_511f4d07bd094182abbf03a18c9d6036 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f77fa9ef73c8216859646ff69bb07b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_feccc9aea514ff2ace9387c339665dd4 = $(`<div id="html_feccc9aea514ff2ace9387c339665dd4" style="width: 100.0%; height: 100.0%;">         <b>Gruvasjön</b><br>         Fiskarter: Gädda, Aborre, Mört, Braxen, Vitfisk, Sutare<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.57144328631201,15.094357264184577' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_4f77fa9ef73c8216859646ff69bb07b4.setContent(html_feccc9aea514ff2ace9387c339665dd4);
+            
+        
+
+        marker_1451ac1c49145837b40ae8896dc88292.bindPopup(popup_4f77fa9ef73c8216859646ff69bb07b4)
+        ;
+
+        
+    
+    
+                marker_1451ac1c49145837b40ae8896dc88292.setIcon(icon_511f4d07bd094182abbf03a18c9d6036);
+            
+    
+            var marker_81316f33d1fe4ced388bda8bf2715b75 = L.marker(
+                [60.570815596744694, 15.105301546964778],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_d857c5a5179c9e9086c1828e487d2ea4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7bf033434b55949b6b59589db7996b68 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_37441ab63a3a44fccabf1a5eea8fe6a4 = $(`<div id="html_37441ab63a3a44fccabf1a5eea8fe6a4" style="width: 100.0%; height: 100.0%;">         <b>Åssjön</b><br>         Fiskarter: Mört, Ruda<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.570815596744694,15.105301546964778' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_7bf033434b55949b6b59589db7996b68.setContent(html_37441ab63a3a44fccabf1a5eea8fe6a4);
+            
+        
+
+        marker_81316f33d1fe4ced388bda8bf2715b75.bindPopup(popup_7bf033434b55949b6b59589db7996b68)
+        ;
+
+        
+    
+    
+                marker_81316f33d1fe4ced388bda8bf2715b75.setIcon(icon_d857c5a5179c9e9086c1828e487d2ea4);
+            
+    
+            var marker_3218374a521310987e8e75a76af8a6e2 = L.marker(
+                [60.56843866695851, 15.102247372233906],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_9ca4a57265a2d7b25c538ebb2360bef3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f85303a066f2c08f193e7f49c2c7d66 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f881ff659176969b032b80251161be84 = $(`<div id="html_f881ff659176969b032b80251161be84" style="width: 100.0%; height: 100.0%;">         <b>Sandsjön</b><br>         Fiskarter: Mört, Ruda<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.56843866695851,15.102247372233906' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_2f85303a066f2c08f193e7f49c2c7d66.setContent(html_f881ff659176969b032b80251161be84);
+            
+        
+
+        marker_3218374a521310987e8e75a76af8a6e2.bindPopup(popup_2f85303a066f2c08f193e7f49c2c7d66)
+        ;
+
+        
+    
+    
+                marker_3218374a521310987e8e75a76af8a6e2.setIcon(icon_9ca4a57265a2d7b25c538ebb2360bef3);
+            
+    
+            var marker_cbfe018aed31fac6c793d9fce5132a66 = L.marker(
+                [60.5647968724424, 15.109203603572391],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_ffa9e61c53204f49c2dfd0debe883c7f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4124d8b42ba84693f31def696e81169 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6df16eb8d14bad8100070117afc91aa7 = $(`<div id="html_6df16eb8d14bad8100070117afc91aa7" style="width: 100.0%; height: 100.0%;">         <b>Gallsjön</b><br>         Fiskarter: Ruda<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.5647968724424,15.109203603572391' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_c4124d8b42ba84693f31def696e81169.setContent(html_6df16eb8d14bad8100070117afc91aa7);
+            
+        
+
+        marker_cbfe018aed31fac6c793d9fce5132a66.bindPopup(popup_c4124d8b42ba84693f31def696e81169)
+        ;
+
+        
+    
+    
+                marker_cbfe018aed31fac6c793d9fce5132a66.setIcon(icon_ffa9e61c53204f49c2dfd0debe883c7f);
+            
+    
+            var marker_8b9777b04ccbddb5354a6c63a682ae15 = L.marker(
+                [60.55893515793193, 15.118284020416782],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_fae05d7b8f3537a9ba17d205de25e68b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b7d94320cdccc66d977e9cd4f27137e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d975bfe3ce0e3089cd8491dc3c853fe2 = $(`<div id="html_d975bfe3ce0e3089cd8491dc3c853fe2" style="width: 100.0%; height: 100.0%;">         <b>Nässjön</b><br>         Fiskarter: Gädda, Aborre, Vitfisk, Ruda<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.55893515793193,15.118284020416782' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_6b7d94320cdccc66d977e9cd4f27137e.setContent(html_d975bfe3ce0e3089cd8491dc3c853fe2);
+            
+        
+
+        marker_8b9777b04ccbddb5354a6c63a682ae15.bindPopup(popup_6b7d94320cdccc66d977e9cd4f27137e)
+        ;
+
+        
+    
+    
+                marker_8b9777b04ccbddb5354a6c63a682ae15.setIcon(icon_fae05d7b8f3537a9ba17d205de25e68b);
+            
+    
+            var marker_e77ad178e4751ac08e5b075631354023 = L.marker(
+                [60.54637016084343, 15.16452354826951],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_9dbf874714b3a9af36c4638918a56dec = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d0affd2e40b7227f18677f8c70b2a539 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0c2545a3704acc90b4ad5231e96f0d7 = $(`<div id="html_b0c2545a3704acc90b4ad5231e96f0d7" style="width: 100.0%; height: 100.0%;">         <b>Djurmosjön m fl småsjöar</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.54637016084343,15.16452354826951' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_d0affd2e40b7227f18677f8c70b2a539.setContent(html_b0c2545a3704acc90b4ad5231e96f0d7);
+            
+        
+
+        marker_e77ad178e4751ac08e5b075631354023.bindPopup(popup_d0affd2e40b7227f18677f8c70b2a539)
+        ;
+
+        
+    
+    
+                marker_e77ad178e4751ac08e5b075631354023.setIcon(icon_9dbf874714b3a9af36c4638918a56dec);
+            
+    
+            var marker_ded917d40ede42186526548734711caf = L.marker(
+                [60.56510134335224, 15.011783225217734],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_f02631973f2edad99ac97d3ba5d71bd3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8eb7f529fd7a997cd943526082244422 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_432ac7f64e956ce0dcf629c30dc804e4 = $(`<div id="html_432ac7f64e956ce0dcf629c30dc804e4" style="width: 100.0%; height: 100.0%;">         <b>Annsjön</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.56510134335224,15.011783225217734' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_8eb7f529fd7a997cd943526082244422.setContent(html_432ac7f64e956ce0dcf629c30dc804e4);
+            
+        
+
+        marker_ded917d40ede42186526548734711caf.bindPopup(popup_8eb7f529fd7a997cd943526082244422)
+        ;
+
+        
+    
+    
+                marker_ded917d40ede42186526548734711caf.setIcon(icon_f02631973f2edad99ac97d3ba5d71bd3);
+            
+    
+            var marker_307c6797c3fd80a60f94b1c6414b2e01 = L.marker(
+                [60.55401250329032, 15.015608341058252],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_859c97d4ff6da9e707356fb049112e73 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3f552365b9de76a6abb1211b57bfe7a9 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a31822ed422ba623da44640ee8c7e1ae = $(`<div id="html_a31822ed422ba623da44640ee8c7e1ae" style="width: 100.0%; height: 100.0%;">         <b>Skogstjärn</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.55401250329032,15.015608341058252' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_3f552365b9de76a6abb1211b57bfe7a9.setContent(html_a31822ed422ba623da44640ee8c7e1ae);
+            
+        
+
+        marker_307c6797c3fd80a60f94b1c6414b2e01.bindPopup(popup_3f552365b9de76a6abb1211b57bfe7a9)
+        ;
+
+        
+    
+    
+                marker_307c6797c3fd80a60f94b1c6414b2e01.setIcon(icon_859c97d4ff6da9e707356fb049112e73);
+            
+    
+            var marker_1a52d0e88917a7c3bb0e482bf025cda8 = L.marker(
+                [60.546031208207154, 15.00907831714062],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_0c50d0f844d844ab40a808b3c1e5b370 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5d3433a98b78290b49e466a729cded44 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_5d42c4fb1bc60b386c6e3021e293009b = $(`<div id="html_5d42c4fb1bc60b386c6e3021e293009b" style="width: 100.0%; height: 100.0%;">         <b>Myrtjärn</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.546031208207154,15.00907831714062' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_5d3433a98b78290b49e466a729cded44.setContent(html_5d42c4fb1bc60b386c6e3021e293009b);
+            
+        
+
+        marker_1a52d0e88917a7c3bb0e482bf025cda8.bindPopup(popup_5d3433a98b78290b49e466a729cded44)
+        ;
+
+        
+    
+    
+                marker_1a52d0e88917a7c3bb0e482bf025cda8.setIcon(icon_0c50d0f844d844ab40a808b3c1e5b370);
+            
+    
+            var marker_1debe25e19fa06a1231f9223b38637f1 = L.marker(
+                [60.5359845409558, 15.001239225423534],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_a8a0a70b60fbe91ec76e334e3de8330b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_30c99e8908443742f461291a78b91daf = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bc9e17b1093294d5d1438d4ae1e86b6d = $(`<div id="html_bc9e17b1093294d5d1438d4ae1e86b6d" style="width: 100.0%; height: 100.0%;">         <b>Dammsjön</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.5359845409558,15.001239225423534' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_30c99e8908443742f461291a78b91daf.setContent(html_bc9e17b1093294d5d1438d4ae1e86b6d);
+            
+        
+
+        marker_1debe25e19fa06a1231f9223b38637f1.bindPopup(popup_30c99e8908443742f461291a78b91daf)
+        ;
+
+        
+    
+    
+                marker_1debe25e19fa06a1231f9223b38637f1.setIcon(icon_a8a0a70b60fbe91ec76e334e3de8330b);
+            
+    
+            var marker_d54a2a17935b18448281abe18b219bc6 = L.marker(
+                [60.52851053196894, 14.967842222722377],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_eb25ad9643c5eb11ba4d4bc6c89a8343 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7971f4560735d5cd0ec2ce5c6383baa1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_bcba342061cbe109cd2af2cd87c14e35 = $(`<div id="html_bcba342061cbe109cd2af2cd87c14e35" style="width: 100.0%; height: 100.0%;">         <b>Grätjärn</b><br>         Fiskarter: Öring<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.52851053196894,14.967842222722377' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_7971f4560735d5cd0ec2ce5c6383baa1.setContent(html_bcba342061cbe109cd2af2cd87c14e35);
+            
+        
+
+        marker_d54a2a17935b18448281abe18b219bc6.bindPopup(popup_7971f4560735d5cd0ec2ce5c6383baa1)
+        ;
+
+        
+    
+    
+                marker_d54a2a17935b18448281abe18b219bc6.setIcon(icon_eb25ad9643c5eb11ba4d4bc6c89a8343);
+            
+    
+            var marker_12c01e33d518c01a58867e1d9b07d55e = L.marker(
+                [60.525855969193316, 14.985516521233384],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_4ca29e098b11bac7be8379780d11d594 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8130948dc3a4a46fac5a71a1830964f2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1bdedd41afcdfb960173c3f36b50fbaa = $(`<div id="html_1bdedd41afcdfb960173c3f36b50fbaa" style="width: 100.0%; height: 100.0%;">         <b>Vinnarn</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.525855969193316,14.985516521233384' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_8130948dc3a4a46fac5a71a1830964f2.setContent(html_1bdedd41afcdfb960173c3f36b50fbaa);
+            
+        
+
+        marker_12c01e33d518c01a58867e1d9b07d55e.bindPopup(popup_8130948dc3a4a46fac5a71a1830964f2)
+        ;
+
+        
+    
+    
+                marker_12c01e33d518c01a58867e1d9b07d55e.setIcon(icon_4ca29e098b11bac7be8379780d11d594);
+            
+    
+            var marker_42e132fbea5bcd2eb09515601effb70e = L.marker(
+                [60.51374898431676, 14.939610942567045],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_400846cc105e2b627f29d7afde1cf7ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bf04d1db077dabf3435115f754567520 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_99834ed87b16590c8be03f9562c28df3 = $(`<div id="html_99834ed87b16590c8be03f9562c28df3" style="width: 100.0%; height: 100.0%;">         <b>Flyten</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.51374898431676,14.939610942567045' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_bf04d1db077dabf3435115f754567520.setContent(html_99834ed87b16590c8be03f9562c28df3);
+            
+        
+
+        marker_42e132fbea5bcd2eb09515601effb70e.bindPopup(popup_bf04d1db077dabf3435115f754567520)
+        ;
+
+        
+    
+    
+                marker_42e132fbea5bcd2eb09515601effb70e.setIcon(icon_400846cc105e2b627f29d7afde1cf7ae);
+            
+    
+            var marker_b6692ffac686383528a2df631a4a8a94 = L.marker(
+                [60.503167585329365, 15.009594287394611],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_366377da137e6ca0e4054172a68d5556 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a33e69c69ef35f10fe49c66ab1e77776 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_f7873c680fad4b27b54ab20c3bb82a89 = $(`<div id="html_f7873c680fad4b27b54ab20c3bb82a89" style="width: 100.0%; height: 100.0%;">         <b>Brötjärnasjön</b><br>         Fiskarter: Gädda, Aborre, Vitfisk, Sutare<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.503167585329365,15.009594287394611' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_a33e69c69ef35f10fe49c66ab1e77776.setContent(html_f7873c680fad4b27b54ab20c3bb82a89);
+            
+        
+
+        marker_b6692ffac686383528a2df631a4a8a94.bindPopup(popup_a33e69c69ef35f10fe49c66ab1e77776)
+        ;
+
+        
+    
+    
+                marker_b6692ffac686383528a2df631a4a8a94.setIcon(icon_366377da137e6ca0e4054172a68d5556);
+            
+    
+            var marker_7aacd2dfc91df8c191826ae259483829 = L.marker(
+                [60.49513814182956, 14.972006896016257],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_01a31c07302215014ed6fb0ea753bda5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdbeb8c932f8d61b2f4b73648b7cbb01 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_a3bc0e6e475e90c4f287bbb7a9d9346e = $(`<div id="html_a3bc0e6e475e90c4f287bbb7a9d9346e" style="width: 100.0%; height: 100.0%;">         <b>Balltjärn</b><br>         Fiskarter: Gädda, Aborre, Vitfisk, Sutare, Ruda<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.49513814182956,14.972006896016257' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_fdbeb8c932f8d61b2f4b73648b7cbb01.setContent(html_a3bc0e6e475e90c4f287bbb7a9d9346e);
+            
+        
+
+        marker_7aacd2dfc91df8c191826ae259483829.bindPopup(popup_fdbeb8c932f8d61b2f4b73648b7cbb01)
+        ;
+
+        
+    
+    
+                marker_7aacd2dfc91df8c191826ae259483829.setIcon(icon_01a31c07302215014ed6fb0ea753bda5);
+            
+    
+            var marker_d08146b4c5907a8b27a2d5b304c683e9 = L.marker(
+                [60.491268128475014, 15.02911809484095],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_1119bfe63c9757feb2c6d23ff4c6be86 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c3e47023bd8722d66645f664fc33071 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b04959e4a5a8efd91dd2c5435e89334f = $(`<div id="html_b04959e4a5a8efd91dd2c5435e89334f" style="width: 100.0%; height: 100.0%;">         <b>Löfsen</b><br>         Fiskarter: Gädda, Aborre, Mört, Vitfisk, Sutare<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.491268128475014,15.02911809484095' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_1c3e47023bd8722d66645f664fc33071.setContent(html_b04959e4a5a8efd91dd2c5435e89334f);
+            
+        
+
+        marker_d08146b4c5907a8b27a2d5b304c683e9.bindPopup(popup_1c3e47023bd8722d66645f664fc33071)
+        ;
+
+        
+    
+    
+                marker_d08146b4c5907a8b27a2d5b304c683e9.setIcon(icon_1119bfe63c9757feb2c6d23ff4c6be86);
+            
+    
+            var marker_e266bbb8874d7889e3ce970399d2d90d = L.marker(
+                [60.49656899962461, 15.119549332202924],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_a599cd05b35cc3cf97f8f793c5a09323 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de2624bc612ae3a918ac1d6742f9e14e = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d4368c96ea3f715a1e9c8736af4b02d0 = $(`<div id="html_d4368c96ea3f715a1e9c8736af4b02d0" style="width: 100.0%; height: 100.0%;">         <b>Gettjärn</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.49656899962461,15.119549332202924' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_de2624bc612ae3a918ac1d6742f9e14e.setContent(html_d4368c96ea3f715a1e9c8736af4b02d0);
+            
+        
+
+        marker_e266bbb8874d7889e3ce970399d2d90d.bindPopup(popup_de2624bc612ae3a918ac1d6742f9e14e)
+        ;
+
+        
+    
+    
+                marker_e266bbb8874d7889e3ce970399d2d90d.setIcon(icon_a599cd05b35cc3cf97f8f793c5a09323);
+            
+    
+            var marker_67aea837447db47233b5551ee8bb643d = L.marker(
+                [60.483190019901464, 14.987918995323163],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_5a2779ed5c16cc52cf8fbac7c961bf4d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9bed9a59acd51a8cbaf0e24b479f74b4 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_116be4b70e736d575cfe627c627c3e3a = $(`<div id="html_116be4b70e736d575cfe627c627c3e3a" style="width: 100.0%; height: 100.0%;">         <b>Bredflaten</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.483190019901464,14.987918995323163' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_9bed9a59acd51a8cbaf0e24b479f74b4.setContent(html_116be4b70e736d575cfe627c627c3e3a);
+            
+        
+
+        marker_67aea837447db47233b5551ee8bb643d.bindPopup(popup_9bed9a59acd51a8cbaf0e24b479f74b4)
+        ;
+
+        
+    
+    
+                marker_67aea837447db47233b5551ee8bb643d.setIcon(icon_5a2779ed5c16cc52cf8fbac7c961bf4d);
+            
+    
+            var marker_d43973d7a55c7b698bb8af4ecc824a00 = L.marker(
+                [60.47211055904938, 14.989650981085989],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_dab48882845b6867a89723646008b580 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a3ba03d6e5bc182aea9c6f7539ca2c1 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7e965a2c873ac99080f68e7856882652 = $(`<div id="html_7e965a2c873ac99080f68e7856882652" style="width: 100.0%; height: 100.0%;">         <b>Myrflaten</b><br>         Fiskarter: Öring, Gädda, Aborre, Vitfisk, Ruda<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.47211055904938,14.989650981085989' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_5a3ba03d6e5bc182aea9c6f7539ca2c1.setContent(html_7e965a2c873ac99080f68e7856882652);
+            
+        
+
+        marker_d43973d7a55c7b698bb8af4ecc824a00.bindPopup(popup_5a3ba03d6e5bc182aea9c6f7539ca2c1)
+        ;
+
+        
+    
+    
+                marker_d43973d7a55c7b698bb8af4ecc824a00.setIcon(icon_dab48882845b6867a89723646008b580);
+            
+    
+            var marker_3a8a068d103c02141a2728ce9c884a7f = L.marker(
+                [60.44121401117106, 14.980339178914395],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_8f5d394bbab6977a197efb7cb10e6825 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ce935ca364c8fd1109b55b91515c589 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c53bd50a9daee3261534f4c65c83d14f = $(`<div id="html_c53bd50a9daee3261534f4c65c83d14f" style="width: 100.0%; height: 100.0%;">         <b>Fisklövsen</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.44121401117106,14.980339178914395' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_5ce935ca364c8fd1109b55b91515c589.setContent(html_c53bd50a9daee3261534f4c65c83d14f);
+            
+        
+
+        marker_3a8a068d103c02141a2728ce9c884a7f.bindPopup(popup_5ce935ca364c8fd1109b55b91515c589)
+        ;
+
+        
+    
+    
+                marker_3a8a068d103c02141a2728ce9c884a7f.setIcon(icon_8f5d394bbab6977a197efb7cb10e6825);
+            
+    
+            var marker_8cc0a1ae8a6d6855d4d85346260e4746 = L.marker(
+                [60.4767243982085, 15.139940852578146],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_01ce2cd29f72478ff57bcd588e69418c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c9a1ceae4dd0be38062f5497983c2478 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_60b415f69ce739c200251a369ecac590 = $(`<div id="html_60b415f69ce739c200251a369ecac590" style="width: 100.0%; height: 100.0%;">         <b>Bästen</b><br>         Fiskarter: Öring, Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.4767243982085,15.139940852578146' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_c9a1ceae4dd0be38062f5497983c2478.setContent(html_60b415f69ce739c200251a369ecac590);
+            
+        
+
+        marker_8cc0a1ae8a6d6855d4d85346260e4746.bindPopup(popup_c9a1ceae4dd0be38062f5497983c2478)
+        ;
+
+        
+    
+    
+                marker_8cc0a1ae8a6d6855d4d85346260e4746.setIcon(icon_01ce2cd29f72478ff57bcd588e69418c);
+            
+    
+            var marker_9394689c7121a9346067d968b67273cc = L.marker(
+                [60.46377686635793, 15.022692909572397],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_754f86739b7bd220c1dd54ed2a5eba6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3e27428f4480ead329f6c91d64b63955 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2d6d7715d4cf58cc535eba3fb494a9d2 = $(`<div id="html_2d6d7715d4cf58cc535eba3fb494a9d2" style="width: 100.0%; height: 100.0%;">         <b>Ösjön</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.46377686635793,15.022692909572397' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_3e27428f4480ead329f6c91d64b63955.setContent(html_2d6d7715d4cf58cc535eba3fb494a9d2);
+            
+        
+
+        marker_9394689c7121a9346067d968b67273cc.bindPopup(popup_3e27428f4480ead329f6c91d64b63955)
+        ;
+
+        
+    
+    
+                marker_9394689c7121a9346067d968b67273cc.setIcon(icon_754f86739b7bd220c1dd54ed2a5eba6c);
+            
+    
+            var marker_81c6bd472ceba8cdc1346412d568d0d3 = L.marker(
+                [60.45374463167546, 14.921708147033772],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_d78b8e8961c8b3fbc2b3410033492009 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_229f9c7f5eb2e2e3cc81d295c8e55c4a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_1ac83e796aeead462e76a514539a1f5e = $(`<div id="html_1ac83e796aeead462e76a514539a1f5e" style="width: 100.0%; height: 100.0%;">         <b>Alten</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.45374463167546,14.921708147033772' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_229f9c7f5eb2e2e3cc81d295c8e55c4a.setContent(html_1ac83e796aeead462e76a514539a1f5e);
+            
+        
+
+        marker_81c6bd472ceba8cdc1346412d568d0d3.bindPopup(popup_229f9c7f5eb2e2e3cc81d295c8e55c4a)
+        ;
+
+        
+    
+    
+                marker_81c6bd472ceba8cdc1346412d568d0d3.setIcon(icon_d78b8e8961c8b3fbc2b3410033492009);
+            
+    
+            var marker_c7e95425cce2cd14bc7014002ed34851 = L.marker(
+                [60.441091595032326, 14.918195288217662],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_e945ac39db0d66aac166a605f511a0aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8669577aaea58986da37639da902190 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_3c9977f3e13be9a6605888347543c43b = $(`<div id="html_3c9977f3e13be9a6605888347543c43b" style="width: 100.0%; height: 100.0%;">         <b>Dammanstjärn</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.441091595032326,14.918195288217662' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_c8669577aaea58986da37639da902190.setContent(html_3c9977f3e13be9a6605888347543c43b);
+            
+        
+
+        marker_c7e95425cce2cd14bc7014002ed34851.bindPopup(popup_c8669577aaea58986da37639da902190)
+        ;
+
+        
+    
+    
+                marker_c7e95425cce2cd14bc7014002ed34851.setIcon(icon_e945ac39db0d66aac166a605f511a0aa);
+            
+    
+            var marker_11ce8cb38e08e761fd64d8d28c452f11 = L.marker(
+                [60.391849876730895, 14.986120372953529],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_727f38b240f971b6dbfe45e796aa8555 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_043ebb5a7170bc90fd4b3fe9b17c73ea = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc95c9e2707d9ef278db4637233c608f = $(`<div id="html_cc95c9e2707d9ef278db4637233c608f" style="width: 100.0%; height: 100.0%;">         <b>Bytjärn</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.391849876730895,14.986120372953529' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_043ebb5a7170bc90fd4b3fe9b17c73ea.setContent(html_cc95c9e2707d9ef278db4637233c608f);
+            
+        
+
+        marker_11ce8cb38e08e761fd64d8d28c452f11.bindPopup(popup_043ebb5a7170bc90fd4b3fe9b17c73ea)
+        ;
+
+        
+    
+    
+                marker_11ce8cb38e08e761fd64d8d28c452f11.setIcon(icon_727f38b240f971b6dbfe45e796aa8555);
+            
+    
+            var marker_92207647dd5809af227cae3c231108b1 = L.marker(
+                [60.41007738708458, 14.998820025735089],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_0b1d36061e1dd76afdb0ffe6eb874e90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fe9a9747d68f359d15d0b491b2c1341d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_c0a970763a0c349f0739409b49330570 = $(`<div id="html_c0a970763a0c349f0739409b49330570" style="width: 100.0%; height: 100.0%;">         <b>Tansen</b><br>         Fiskarter: Öring, Gädda, Aborre, Vitfisk, Sutare<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.41007738708458,14.998820025735089' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_fe9a9747d68f359d15d0b491b2c1341d.setContent(html_c0a970763a0c349f0739409b49330570);
+            
+        
+
+        marker_92207647dd5809af227cae3c231108b1.bindPopup(popup_fe9a9747d68f359d15d0b491b2c1341d)
+        ;
+
+        
+    
+    
+                marker_92207647dd5809af227cae3c231108b1.setIcon(icon_0b1d36061e1dd76afdb0ffe6eb874e90);
+            
+    
+            var marker_410713aaa6981e3c0478a50bcf92c05f = L.marker(
+                [60.4351105461298, 15.083824432964096],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_8e3182bffaa2b2b9d3ad28b3235bc165 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b1f6fe316a82ec0523197ee8d0a850d2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_69613d9a30e2085b5a6abdf45d8cce0b = $(`<div id="html_69613d9a30e2085b5a6abdf45d8cce0b" style="width: 100.0%; height: 100.0%;">         <b>Tryssjön</b><br>         Fiskarter: Öring, Aborre<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.4351105461298,15.083824432964096' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_b1f6fe316a82ec0523197ee8d0a850d2.setContent(html_69613d9a30e2085b5a6abdf45d8cce0b);
+            
+        
+
+        marker_410713aaa6981e3c0478a50bcf92c05f.bindPopup(popup_b1f6fe316a82ec0523197ee8d0a850d2)
+        ;
+
+        
+    
+    
+                marker_410713aaa6981e3c0478a50bcf92c05f.setIcon(icon_8e3182bffaa2b2b9d3ad28b3235bc165);
+            
+    
+            var marker_1ad54f4b10af1217c55c4373c04f43ef = L.marker(
+                [60.42207505244266, 15.064958814917727],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_459e977351f540e17b6c43d182e6a230 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8eccb176d193b343e5d5e7842674a02 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_84541fe2f286a9a3bb598d01c813a04a = $(`<div id="html_84541fe2f286a9a3bb598d01c813a04a" style="width: 100.0%; height: 100.0%;">         <b>Rosen</b><br>         Fiskarter: Öring<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.42207505244266,15.064958814917727' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_e8eccb176d193b343e5d5e7842674a02.setContent(html_84541fe2f286a9a3bb598d01c813a04a);
+            
+        
+
+        marker_1ad54f4b10af1217c55c4373c04f43ef.bindPopup(popup_e8eccb176d193b343e5d5e7842674a02)
+        ;
+
+        
+    
+    
+                marker_1ad54f4b10af1217c55c4373c04f43ef.setIcon(icon_459e977351f540e17b6c43d182e6a230);
+            
+    
+            var marker_8fbb8930166726fcee3406461c8f1821 = L.marker(
+                [60.41967571690862, 15.048647424956886],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_0ceca6b2f2343e809d94ba87073b0c16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4686b8995675bac2f01beded31ba8450 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7fb9f2901a4f2cc668f171daea8298e1 = $(`<div id="html_7fb9f2901a4f2cc668f171daea8298e1" style="width: 100.0%; height: 100.0%;">         <b>Garntjärn</b><br>         Fiskarter: Öring<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.41967571690862,15.048647424956886' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_4686b8995675bac2f01beded31ba8450.setContent(html_7fb9f2901a4f2cc668f171daea8298e1);
+            
+        
+
+        marker_8fbb8930166726fcee3406461c8f1821.bindPopup(popup_4686b8995675bac2f01beded31ba8450)
+        ;
+
+        
+    
+    
+                marker_8fbb8930166726fcee3406461c8f1821.setIcon(icon_0ceca6b2f2343e809d94ba87073b0c16);
+            
+    
+            var marker_8f376f78578e1f9b0aa7923d8e2d31d8 = L.marker(
+                [60.410782324062936, 15.03418368726043],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_6a96b10feac9de0d257a1e8adb7f577d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8c14c76781d4d7312a408d4b4b23a932 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23560ad7d29d920f9dfe0b8cd38d5739 = $(`<div id="html_23560ad7d29d920f9dfe0b8cd38d5739" style="width: 100.0%; height: 100.0%;">         <b>St Fjästjärn</b><br>         Fiskarter: Öring, Aborre<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.410782324062936,15.03418368726043' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_8c14c76781d4d7312a408d4b4b23a932.setContent(html_23560ad7d29d920f9dfe0b8cd38d5739);
+            
+        
+
+        marker_8f376f78578e1f9b0aa7923d8e2d31d8.bindPopup(popup_8c14c76781d4d7312a408d4b4b23a932)
+        ;
+
+        
+    
+    
+                marker_8f376f78578e1f9b0aa7923d8e2d31d8.setIcon(icon_6a96b10feac9de0d257a1e8adb7f577d);
+            
+    
+            var marker_01252d21e8b1b4f0bd3c9833d2444272 = L.marker(
+                [60.54434768295056, 15.2475266318317],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_1e596d096261b540ce3942bb27aef93d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_45ec0510298c5a1ebecc9ea950498618 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b6452de129cfdf28cea52a9fa417c1c9 = $(`<div id="html_b6452de129cfdf28cea52a9fa417c1c9" style="width: 100.0%; height: 100.0%;">         <b>Hemstjärn</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.54434768295056,15.2475266318317' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_45ec0510298c5a1ebecc9ea950498618.setContent(html_b6452de129cfdf28cea52a9fa417c1c9);
+            
+        
+
+        marker_01252d21e8b1b4f0bd3c9833d2444272.bindPopup(popup_45ec0510298c5a1ebecc9ea950498618)
+        ;
+
+        
+    
+    
+                marker_01252d21e8b1b4f0bd3c9833d2444272.setIcon(icon_1e596d096261b540ce3942bb27aef93d);
+            
+    
+            var marker_5e6f8999479b77d60a615a187d4437f1 = L.marker(
+                [60.5079212562467, 15.216713608454395],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_6fb4541b00ccf212bc7817b77b6fbf1d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_078de68e4a4a275f45392b58250ef73a = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_355e0328e056bdf00ba00901eeffc32e = $(`<div id="html_355e0328e056bdf00ba00901eeffc32e" style="width: 100.0%; height: 100.0%;">         <b>St Orsen</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.5079212562467,15.216713608454395' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_078de68e4a4a275f45392b58250ef73a.setContent(html_355e0328e056bdf00ba00901eeffc32e);
+            
+        
+
+        marker_5e6f8999479b77d60a615a187d4437f1.bindPopup(popup_078de68e4a4a275f45392b58250ef73a)
+        ;
+
+        
+    
+    
+                marker_5e6f8999479b77d60a615a187d4437f1.setIcon(icon_6fb4541b00ccf212bc7817b77b6fbf1d);
+            
+    
+            var marker_a357ad66bd4823fd3363488210e3e3f7 = L.marker(
+                [60.57526897910936, 15.211380341047494],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_7f3f71d69a0aca68dec5739bdad038e8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27ce5acc3aaa840366b9226bad109d48 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_05ae3e604bec9bc2475308c54e788bf7 = $(`<div id="html_05ae3e604bec9bc2475308c54e788bf7" style="width: 100.0%; height: 100.0%;">         <b>Sifferbotjärn</b><br>         Fiskarter: Gädda, Aborre, Vitfisk<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.57526897910936,15.211380341047494' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_27ce5acc3aaa840366b9226bad109d48.setContent(html_05ae3e604bec9bc2475308c54e788bf7);
+            
+        
+
+        marker_a357ad66bd4823fd3363488210e3e3f7.bindPopup(popup_27ce5acc3aaa840366b9226bad109d48)
+        ;
+
+        
+    
+    
+                marker_a357ad66bd4823fd3363488210e3e3f7.setIcon(icon_7f3f71d69a0aca68dec5739bdad038e8);
+            
+    
+            var marker_a137f62c18d9d9e09581d0875da93982 = L.marker(
+                [60.6189635002963, 15.069556503068704],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_53806b284cba541f548dd9818fd43736 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e721818efbb172c6e2b614dd934199be = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_72e1a8d155f324bbb762dbaf10e6c9e8 = $(`<div id="html_72e1a8d155f324bbb762dbaf10e6c9e8" style="width: 100.0%; height: 100.0%;">         <b>Lässen</b><br>         Fiskarter: Gädda, Aborre, Vitfisk, Ruda<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.6189635002963,15.069556503068704' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_e721818efbb172c6e2b614dd934199be.setContent(html_72e1a8d155f324bbb762dbaf10e6c9e8);
+            
+        
+
+        marker_a137f62c18d9d9e09581d0875da93982.bindPopup(popup_e721818efbb172c6e2b614dd934199be)
+        ;
+
+        
+    
+    
+                marker_a137f62c18d9d9e09581d0875da93982.setIcon(icon_53806b284cba541f548dd9818fd43736);
+            
+    
+            var marker_c88a563a355a0751a2cb33556c3cc16f = L.marker(
+                [60.59371492899295, 15.071820766976124],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_078775e5d3b77c8a7c6cdce3663f2eb7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7705895dff8a1f116d548c0d6f4576c6 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6aeeea940a04797b5ad56fc38974f6bb = $(`<div id="html_6aeeea940a04797b5ad56fc38974f6bb" style="width: 100.0%; height: 100.0%;">         <b>Tjärnsjön mfl. småsjöar</b><br>         Fiskarter: Gädda, Aborre, Vitfisk, Ruda<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.59371492899295,15.071820766976124' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_7705895dff8a1f116d548c0d6f4576c6.setContent(html_6aeeea940a04797b5ad56fc38974f6bb);
+            
+        
+
+        marker_c88a563a355a0751a2cb33556c3cc16f.bindPopup(popup_7705895dff8a1f116d548c0d6f4576c6)
+        ;
+
+        
+    
+    
+                marker_c88a563a355a0751a2cb33556c3cc16f.setIcon(icon_078775e5d3b77c8a7c6cdce3663f2eb7);
+            
+    
+            var marker_6a7f102c941ff4f322e59ef63f035c41 = L.marker(
+                [60.532714085408024, 15.282406156260874],
+                {
+}
+            ).addTo(map_da77f6050ced1a91ba93fea19d10b77c);
+        
+    
+            var icon_47cdf325e69d18acd3a80d9d553785d2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c87d11692fce1339932bd6c295d0902f = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_096f8a00dc4e3b703e803dd2006201c9 = $(`<div id="html_096f8a00dc4e3b703e803dd2006201c9" style="width: 100.0%; height: 100.0%;">         <b>Långsjön (delat vatten)</b><br>         Fiskarter: Öring, Gädda, Aborre, Vitfisk, Sutare, Ruda<br>         <a href='https://www.google.com/maps/dir/?api=1&destination=60.532714085408024,15.282406156260874' target='_blank'>Öppna i kartapp</a>         </div>`)[0];
+                popup_c87d11692fce1339932bd6c295d0902f.setContent(html_096f8a00dc4e3b703e803dd2006201c9);
+            
+        
+
+        marker_6a7f102c941ff4f322e59ef63f035c41.bindPopup(popup_c87d11692fce1339932bd6c295d0902f)
+        ;
+
+        
+    
+    
+                marker_6a7f102c941ff4f322e59ef63f035c41.setIcon(icon_47cdf325e69d18acd3a80d9d553785d2);
+            
+    
+            map_da77f6050ced1a91ba93fea19d10b77c.fitBounds(
+                [[60.391849876730895, 14.896780741009206], [60.61961538057019, 15.282406156260874]],
+                {}
+            );
+        
+</script>
+</html>
